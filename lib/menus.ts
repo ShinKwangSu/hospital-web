@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    label: "File",
+    label: "병원소개",
     items: [
       { label: "New Tab" },
       { label: "New Window" },
@@ -10,7 +10,7 @@ export const menuItems = [
     ],
   },
   {
-    label: "Edit",
+    label: "진료과목",
     items: [
       { label: "Undo" },
       { label: "Redo" },
@@ -20,7 +20,7 @@ export const menuItems = [
     ],
   },
   {
-    label: "View",
+    label: "도수재활치료",
     items: [
       { label: "Always Show Bookmarks Bar" },
       { label: "Always Show Full URLs" },
@@ -31,7 +31,11 @@ export const menuItems = [
     ],
   },
   {
-    label: "Profiles",
+    label: "체외충격파치료",
+    items: [{ label: "Edit..." }, { label: "Add Profile..." }],
+  },
+  {
+    label: "오시는길",
     items: [{ label: "Edit..." }, { label: "Add Profile..." }],
   },
 ];

@@ -2,6 +2,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { menuItems } from "@/lib/menus"; // 메뉴 데이터 import
 import { ChevronRight, Menu } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function MobileNav() {
@@ -15,7 +16,15 @@ export default function MobileNav() {
     <div className="flex items-center justify-between w-full p-4">
       {/* 로고 (왼쪽) */}
       <div className="flex items-center">
-        <Image src="/logo.png" alt="Logo" width={120} height={40} />
+        <Link href={"/"}>
+          <Image
+            src="/logo/smt_logo_L.png"
+            alt="Logo"
+            width={200} // 원하는 너비
+            height={(120 / 3685) * 463} // 원본 비율 유지
+            layout="intrinsic"
+          />
+        </Link>
       </div>
 
       {/* 햄버거 메뉴 (오른쪽) */}

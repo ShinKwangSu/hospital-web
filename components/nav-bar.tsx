@@ -10,7 +10,7 @@ export default function NavBar() {
   useEffect(() => {
     // 화면 크기 감지하여 상태 업데이트
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // 768px 기준으로 모바일/데스크탑 판단
+      setIsMobile(window.innerWidth < 1024);
     };
 
     handleResize(); // 초기 실행
@@ -20,6 +20,8 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="w-full">{isMobile ? <MobileNav /> : <DesktopNav />}</nav>
+    <nav className="w-full py-4">
+      {isMobile ? <MobileNav /> : <DesktopNav />}
+    </nav>
   );
 }

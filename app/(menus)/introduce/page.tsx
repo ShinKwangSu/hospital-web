@@ -3,5 +3,5 @@ export const metadata = {
 };
 
 export default function Introduce() {
-  return <div>병원 소개</div>;
+  return <div>병원 소개.</div>;
 }

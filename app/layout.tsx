@@ -1,3 +1,4 @@
+import NavBar from "@/components/nav-bar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased container min-h-screen mx-auto px-4`}
       >
+        <NavBar />
         {children}
       </body>
     </html>

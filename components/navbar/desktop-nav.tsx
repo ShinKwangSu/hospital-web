@@ -14,12 +14,13 @@ export default function DesktopNav() {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Logo Section */}
-      <div className="my-5">
+      <div className="border-b py-8 w-full flex justify-center">
         <Link href={"/"}>
           <Image
+            className="custom-logo"
             src="/logo/smt_logo_L.png"
             alt="Logo"
-            width={500} // 원하는 너비
+            width={400} // 원하는 너비
             height={(120 / 3685) * 463} // 원본 비율 유지
             layout="intrinsic"
           />
@@ -27,7 +28,7 @@ export default function DesktopNav() {
       </div>
 
       {/* Menu Bar Section */}
-      <Menubar className="w-full justify-center border-none shadow-none">
+      <Menubar className="w-full my-2 xl:my-4 *:text-lg *:xl:text-xl justify-center border-none shadow-none">
         {menuItems.map((menu) => (
           <MenubarMenu key={menu.label}>
             <MenubarTrigger>{menu.label}</MenubarTrigger>

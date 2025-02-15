@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import DesktopNav from "./desktop-nav";
-import MobileNav from "./mobile-nav";
+import DesktopNav from "../navbar/desktop-nav";
+import MobileNav from "../navbar/mobile-nav";
 
 export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,8 +20,6 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="w-full py-4">
-      {isMobile ? <MobileNav /> : <DesktopNav />}
-    </nav>
+    <nav className="w-full">{isMobile ? <MobileNav /> : <DesktopNav />}</nav>
   );
 }

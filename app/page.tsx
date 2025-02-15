@@ -7,25 +7,27 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Image
-          src="/01_home/01_top_img/top_img_01.jpg"
-          alt="메인 이미지"
-          width={1920}
-          height={1095}
-          layout="responsive"
-        />
+        <div className="relative w-full aspect-[1920/1095]">
+          <Image
+            src="/01_home/01_top_img/top_img_01.jpg"
+            alt="메인 이미지"
+            fill
+            style={{ objectFit: "contain", objectPosition: "center" }}
+          />
+        </div>
         <MainTopBanner />
         <div className="flex">
           <MainMiddleBanner01 />
           <MainMiddleBanner02 />
         </div>
-        <Image
-          src="/01_home/05_banner_bottom/banner_bottom.jpg"
-          alt="메인 하단 이미지"
-          width={1920}
-          height={508}
-          layout="responsive"
-        />
+        <div className="relative w-full aspect-[1920/508]">
+          <Image
+            src="/01_home/05_banner_bottom/banner_bottom.jpg"
+            alt="메인 하단 이미지"
+            fill
+            style={{ objectFit: "contain", objectPosition: "center" }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export function MainMiddleBanner01() {
           <CarouselItem key={index}>
             <div className="">
               <Card>
-                <CardContent className="relative w-50 aspect-[1100/800]">
+                <CardContent className="relative w-full aspect-[1100/800]">
                   <Image
                     src={image}
                     alt={`Banner ${index + 1}`}

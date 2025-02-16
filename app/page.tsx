@@ -14,18 +14,20 @@ export default function Home() {
           style={{ objectFit: "contain", objectPosition: "center" }}
         />
       </div>
-      <MainTopBanner />
-      <div className="flex">
-        <MainMiddleBanner01 />
-        <MainMiddleBanner02 />
-      </div>
-      <div className="relative w-full aspect-[1920/508]">
-        <Image
-          src="/01_home/05_banner_bottom/banner_bottom.jpg"
-          alt="메인 하단 이미지"
-          fill
-          style={{ objectFit: "contain", objectPosition: "center" }}
-        />
+      <div className="w-[80%] mx-auto">
+        <MainTopBanner />
+        <div className="flex">
+          <MainMiddleBanner01 />
+          <MainMiddleBanner02 />
+        </div>
+        <div className="relative w-full aspect-[1920/508]">
+          <Image
+            src="/01_home/05_banner_bottom/banner_bottom.jpg"
+            alt="메인 하단 이미지"
+            fill
+            style={{ objectFit: "contain", objectPosition: "center" }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col bg-black px-16 py-10 text-gray-400 justify-center items-center">
+    <div className="flex flex-col bg-black px-16 py-10 text-gray-400 justify-center items-center mt-10">
       <div className="space-x-6">
         <span>삼성마취통증의학과</span>
         <span className="text-gray-400 text-xl">|</span>

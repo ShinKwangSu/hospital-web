@@ -9,8 +9,15 @@ import {
 import { menuItems } from "@/lib/menus"; // 메뉴 데이터 import
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function DesktopNav() {
+  const router = useRouter();
+
+  const handleMenuClick = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Logo Section */}
@@ -35,7 +42,9 @@ export default function DesktopNav() {
             <MenubarContent>
               {menu.items.map((item, index) => (
                 <div key={`${menu.label}-${item.label}`}>
-                  <MenubarItem>{item.label}</MenubarItem>
+                  <MenubarItem onClick={() => handleMenuClick(item.path)}>
+                    {item.label}
+                  </MenubarItem>
                   {index !== menu.items.length - 1 && <MenubarSeparator />}
                 </div>
               ))}

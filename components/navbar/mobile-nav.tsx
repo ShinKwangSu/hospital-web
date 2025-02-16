@@ -58,7 +58,7 @@ export default function MobileNav() {
                       {menu.items.map((subItem) => (
                         <a
                           key={subItem.label}
-                          href="#"
+                          href={menu.path}
                           className="block px-6 py-2 text-gray-700"
                         >
                           {subItem.label}
@@ -69,7 +69,7 @@ export default function MobileNav() {
                 ) : (
                   /* 하위 메뉴가 없는 경우 */
                   <a
-                    href="#"
+                    href={menu.path}
                     className="text-lg font-medium text-gray-800 px-4 py-2"
                   >
                     {menu.label}

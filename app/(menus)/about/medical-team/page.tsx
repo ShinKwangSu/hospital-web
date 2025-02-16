@@ -6,40 +6,30 @@ export const metadata = {
 
 export default function Introduce() {
   return (
-    <div>
-      <div className="relative w-full aspect-[1920/550]">
+    <div className="w-[80%] mx-auto">
+      <div className="relative w-full aspect-[1536/928]">
         <Image
-          src="/02_about/top_img_01.jpg"
+          src="/02_about/medical-team/Dr_01.jpg"
           alt="메인 이미지"
           fill
           style={{ objectFit: "contain", objectPosition: "center" }}
         />
       </div>
-      <div className="w-[80%] mx-auto">
-        <div className="relative w-full aspect-[1536/928]">
-          <Image
-            src="/02_about/medical-team/Dr_01.jpg"
-            alt="메인 이미지"
-            fill
-            style={{ objectFit: "contain", objectPosition: "center" }}
-          />
-        </div>
-        <div className="relative w-full aspect-[1536/928]">
-          <Image
-            src="/02_about/medical-team/Dr_02.jpg"
-            alt="메인 이미지"
-            fill
-            style={{ objectFit: "contain", objectPosition: "center" }}
-          />
-        </div>
-        <div className="relative w-full aspect-[1536/928]">
-          <Image
-            src="/02_about/medical-team/Dr_03.jpg"
-            alt="메인 이미지"
-            fill
-            style={{ objectFit: "contain", objectPosition: "center" }}
-          />
-        </div>
+      <div className="relative w-full aspect-[1536/928]">
+        <Image
+          src="/02_about/medical-team/Dr_02.jpg"
+          alt="메인 이미지"
+          fill
+          style={{ objectFit: "contain", objectPosition: "center" }}
+        />
+      </div>
+      <div className="relative w-full aspect-[1536/928]">
+        <Image
+          src="/02_about/medical-team/Dr_03.jpg"
+          alt="메인 이미지"
+          fill
+          style={{ objectFit: "contain", objectPosition: "center" }}
+        />
       </div>
     </div>
   );

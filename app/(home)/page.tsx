@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="w-[80%] mx-auto">
+      <div className="w-[80%] mx-auto *:mt-[50px]">
         <MainTopBanner />
         <div className="flex">
           <MainMiddleBanner01 />

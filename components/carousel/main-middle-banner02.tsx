@@ -30,7 +30,7 @@ export function MainMiddleBanner02() {
 
   return (
     <Carousel
-      className="w-full py-4 pr-4 lg:py-8"
+      className="w-full pl-4"
       opts={{
         align: "start",
         loop: true,

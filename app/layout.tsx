@@ -2,7 +2,6 @@ import Footer from "@/components/footer/footer";
 import NavBar from "@/components/navbar/nav-bar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Image from "next/image";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -84,14 +83,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-white max-w-screen-2xl antialiased h-full mx-auto`}
       >
         <NavBar />
-        <div className="relative w-full aspect-[1920/800]">
-          <Image
-            src="/01_home/01_top_img/top_img_01.jpg"
-            alt="메인 이미지"
-            fill
-            style={{ objectFit: "contain", objectPosition: "center" }}
-          />
-        </div>
         {children}
         <Footer />
       </body>

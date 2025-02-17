@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div
-      className="flex flex-col gap-5 bg-black px-6 py-8 text-xs text-gray-400 justify-center items-center mt-10
-                md:px-10 md:py-10 lg:px-14 lg:py-16 xl:text-xl"
+      className="flex flex-col gap-5 bg-black px-6 py-8 text-xs text-gray-400 justify-center items-center mt-[50px]
+                md:px-10 md:py-10 lg:px-14 lg:py-16 lg:text-lg"
     >
-      <div className="w-full sm:grid sm:grid-c11 lg:flex lg:justify-between lg:items-center">
+      <div className="w-full sm:grid sm:grid-cols-1 lg:flex lg:justify-between lg:items-center">
         <div>삼성마취통증의학과</div>
         {/* <div className="text-gray-400 text-xl">|</div> */}
 

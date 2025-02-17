@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Introduce() {
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-[80%] mx-auto mt-[50px]">
       <div className="relative w-full aspect-[1536/928]">
         <Image
           src="/02_about/medical-team/Dr_01.jpg"

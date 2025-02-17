@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -39,7 +40,9 @@ const images = [
 
 export default function Facilities() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-  const [carouselApi, setCarouselApi] = React.useState<any>(null);
+  const [carouselApi, setCarouselApi] = React.useState<CarouselApi | null>(
+    null
+  );
   const [selectedMenu, setSelectedMenu] = useState<string>(facilityMenus[0]);
 
   React.useEffect(() => {
